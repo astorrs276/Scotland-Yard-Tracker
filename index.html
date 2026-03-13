@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Scotland Yard Tracker</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="styles/style.css">
     <style>
         .input-row {
             display: flex;
@@ -38,25 +38,17 @@
 
         <!-- Input and right-side button -->
         <div class="input-row">
-            <textarea name="text_field" rows="4">{{ text or '' }}</textarea>
-            <button type="submit" name="button" value="Rewind">Rewind</button>
+            <textarea rows="4"></textarea>
+            <button value="Rewind">Rewind</button>
         </div>
 
         <div class="button-row">
-            <button type="submit" name="button" value="Taxi">Taxi</button>
-            <button type="submit" name="button" value="Bus">Bus</button>
-            <button type="submit" name="button" value="Metro">Metro</button>
-            <button type="submit" name="button" value="Mystery">Mystery</button>
-            <button type="submit" name="button" value="Revealed">Revealed</button>
+            <button value="Taxi">Taxi</button>
+            <button value="Bus">Bus</button>
+            <button value="Metro">Metro</button>
+            <button value="Mystery">Mystery</button>
+            <button value="Revealed">Revealed</button>
         </div>
     </form>
-
-    <script>
-        document.querySelector("form").addEventListener("submit", function () {
-            const h3Text = document.getElementById("previous-header").innerText;
-            const justText = h3Text.replace(/^Previous:\s*/, "");
-            document.getElementById("previous-hidden").value = justText;
-        });
-    </script>
 </body>
 </html>
