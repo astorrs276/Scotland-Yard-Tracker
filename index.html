@@ -3,52 +3,28 @@
 <head>
     <title>Scotland Yard Tracker</title>
     <link rel="stylesheet" href="styles/style.css">
-    <style>
-        .input-row {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            gap: 10px;
-        }
-
-        .input-row input[type="text"] {
-            padding: 8px;
-            width: 300px;
-            font-size: 16px;
-        }
-
-        .input-row button {
-            padding: 8px 16px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
 </head>
+
 <script src="scripts/move_lists.js"></script>
 <script src="scripts/main.js" defer></script>
+
 <body>
     <h1>Scotland Yard Move Tracker</h1>
-    <h3 id="previous-header">Previous: <span class="wrapped-text">{{ previous or '' }}</span></h3>
-    <h3 id="current-header">Current: <span class="wrapped-text">{{ current or '' }}</span></h3>
 
-    <form method="POST">
-        <h3 id="previous-header">Previous: <span class="wrapped-text"></span></h3>
-        <h3 id="current-header">Current: <span class="wrapped-text"></span></h3>
+    <h3 id="previous-header">Previous: <span class="wrapped-text"></span></h3>
+    <h3 id="current-header">Current: <span class="wrapped-text"></span></h3>
 
-        <!-- Input and right-side button -->
-        <div class="input-row">
-            <textarea rows="4"></textarea>
-            <button value="Rewind">Rewind</button>
-        </div>
+    <div class="input-row">
+        <textarea rows="4"></textarea>
+        <button value="Rewind">Rewind</button>
+    </div>
 
-        <div class="button-row">
-            <button value="Taxi">Taxi</button>
-            <button value="Bus">Bus</button>
-            <button value="Metro">Metro</button>
-            <button value="Mystery">Mystery</button>
-            <button value="Revealed">Revealed</button>
-        </div>
-    </form>
+    <div class="button-row">
+        <button value="Taxi">Taxi</button>
+        <button value="Bus">Bus</button>
+        <button value="Metro">Metro</button>
+        <button value="Mystery">Mystery</button>
+        <button value="Revealed">Revealed</button>
+    </div>
 </body>
 </html>
