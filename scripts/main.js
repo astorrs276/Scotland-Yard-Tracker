@@ -82,11 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     updatedText = moveList.length > 0 ? joinVals(moveList[moveList.length - 1]) : "";
 
-                    if (moveList.length > 0) {
-                        moveList.pop();
-                    }
-
-                    previousHeader = moveList.length > 0 ? joinVals(moveList[moveList.length - 1]) : "-1";
+                    previousHeader = moveList.length > 1 ? joinVals(moveList[moveList.length - 2]) : "-1";
                 }
 
                 updateHeaders(previousHeader, updatedText);
