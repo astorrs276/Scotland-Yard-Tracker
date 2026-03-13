@@ -1,0 +1,72 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    margin-top: 100px;
+    zoom: 170%;
+}
+
+.wrapped-text {
+    display: inline-block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+textarea {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    margin: 20px 0;
+    resize: vertical;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-row button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.button-row button:nth-child(1) {
+    background-color: #d7ca26; /* taxi */
+    color: black;
+}
+
+.button-row button:nth-child(2) {
+    background-color: #228da5; /* bus */
+    color: black;
+}
+
+.button-row button:nth-child(3) {
+    background-color: #ba3625; /* metro */
+    color: black;
+}
+
+.button-row button:nth-child(4) {
+    background-color: black; /* mystery */
+    color: white;
+}
+
+.button-row button:nth-child(5) {
+    background-color: #ffffff; /* revealed */
+    color: black;
+}
+
+.button-row button:hover {
+    opacity: 0.8;
+}
